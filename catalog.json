@@ -1,338 +1,741 @@
 {
-  "version": 1,
   "announcement": null,
   "games": [
     {
-      "id": "minecraft-java",
-      "name": "Minecraft: Java Edition",
-      "category": "Sandbox",
-      "info": "Paper, Vanilla oder Fabric",
-      "status": "stable",
-      "scene": "sandbox",
-      "imageAppId": null,
-      "install": { "kind": "minecraftJava" },
-      "defaultPort": 25565,
-      "defaultMaxPlayers": 10,
-      "defaultRamMb": 4096,
-      "fields": ["version", "variant", "gamemode", "difficulty", "worldName", "seed", "maxPlayers", "ram", "port", "eula"],
-      "variants": ["paper", "vanilla", "fabric"],
-      "gamemodes": ["survival", "creative", "adventure", "hardcore"],
-      "difficulties": ["peaceful", "easy", "normal", "hard"],
-      "downloadHint": "ca. 50 MB, Java wird bei Bedarf mitinstalliert",
+      "backupPaths": [
+        "{world}",
+        "{world}_nether",
+        "{world}_the_end"
+      ],
       "canSendCommands": true,
+      "category": "Sandbox",
+      "defaultMaxPlayers": 10,
+      "defaultPort": 25565,
+      "defaultRamMb": 4096,
+      "difficulties": [
+        "peaceful",
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "downloadHint": "ca. 50 MB, Java wird bei Bedarf mitinstalliert",
+      "extraPorts": [],
+      "fields": [
+        "version",
+        "variant",
+        "gamemode",
+        "difficulty",
+        "worldName",
+        "seed",
+        "maxPlayers",
+        "ram",
+        "port",
+        "eula"
+      ],
+      "gamemodes": [
+        "survival",
+        "creative",
+        "adventure",
+        "hardcore"
+      ],
       "gracefulStop": true,
-      "supportsBackup": true,
-      "readyPattern": "Done \\(",
-      "stopCommand": "stop",
+      "id": "minecraft-java",
+      "imageAppId": null,
+      "info": "Paper, Vanilla oder Fabric",
+      "install": {
+        "kind": "minecraftJava"
+      },
       "joinPattern": "\\]: ([A-Za-z0-9_]{2,16}) joined the game",
       "leavePattern": "\\]: ([A-Za-z0-9_]{2,16}) left the game",
-      "backupPaths": ["{world}", "{world}_nether", "{world}_the_end"]
+      "minPasswordLen": 0,
+      "name": "Minecraft: Java Edition",
+      "passwordRequired": false,
+      "readyPattern": "Done \\(",
+      "scene": "sandbox",
+      "status": "stable",
+      "stopCommand": "stop",
+      "supportsBackup": true,
+      "variants": [
+        "paper",
+        "vanilla",
+        "fabric"
+      ]
     },
     {
-      "id": "minecraft-bedrock",
-      "name": "Minecraft: Bedrock Edition",
-      "category": "Sandbox",
-      "info": "Offizieller Dedicated Server",
-      "status": "stable",
-      "scene": "sandbox",
-      "imageAppId": null,
-      "install": { "kind": "minecraftBedrock" },
-      "defaultPort": 19132,
-      "defaultMaxPlayers": 10,
-      "fields": ["gamemode", "difficulty", "worldName", "seed", "maxPlayers", "port", "eula"],
-      "gamemodes": ["survival", "creative", "adventure"],
-      "difficulties": ["peaceful", "easy", "normal", "hard"],
-      "downloadHint": "ca. 100 MB",
+      "backupPaths": [
+        "worlds"
+      ],
       "canSendCommands": true,
+      "category": "Sandbox",
+      "defaultMaxPlayers": 10,
+      "defaultPort": 19132,
+      "defaultRamMb": 0,
+      "difficulties": [
+        "peaceful",
+        "easy",
+        "normal",
+        "hard"
+      ],
+      "downloadHint": "ca. 100 MB",
+      "extraPorts": [],
+      "fields": [
+        "gamemode",
+        "difficulty",
+        "worldName",
+        "seed",
+        "maxPlayers",
+        "port",
+        "eula"
+      ],
+      "gamemodes": [
+        "survival",
+        "creative",
+        "adventure"
+      ],
       "gracefulStop": true,
-      "supportsBackup": true,
-      "readyPattern": "Server started\\.",
-      "stopCommand": "stop",
+      "id": "minecraft-bedrock",
+      "imageAppId": null,
+      "info": "Offizieller Dedicated Server",
+      "install": {
+        "kind": "minecraftBedrock"
+      },
       "joinPattern": "Player connected: ([^,]+)",
       "leavePattern": "Player disconnected: ([^,]+)",
-      "backupPaths": ["worlds"]
+      "minPasswordLen": 0,
+      "name": "Minecraft: Bedrock Edition",
+      "passwordRequired": false,
+      "readyPattern": "Server started\\.",
+      "scene": "sandbox",
+      "status": "stable",
+      "stopCommand": "stop",
+      "supportsBackup": true,
+      "variants": []
     },
     {
-      "id": "terraria",
-      "name": "Terraria",
-      "category": "Sandbox",
-      "info": "Offizieller Dedicated Server",
-      "status": "stable",
-      "scene": "night",
-      "imageAppId": 105600,
-      "install": { "kind": "terraria" },
-      "defaultPort": 7777,
-      "defaultMaxPlayers": 8,
-      "fields": ["worldName", "difficulty", "seed", "maxPlayers", "password", "port"],
-      "difficulties": ["classic", "expert", "master", "journey"],
-      "downloadHint": "ca. 25 MB",
+      "backupPaths": [
+        "worlds"
+      ],
       "canSendCommands": true,
+      "category": "Sandbox",
+      "defaultMaxPlayers": 8,
+      "defaultPort": 7777,
+      "defaultRamMb": 0,
+      "difficulties": [
+        "classic",
+        "expert",
+        "master",
+        "journey"
+      ],
+      "downloadHint": "ca. 25 MB",
+      "extraPorts": [],
+      "fields": [
+        "worldName",
+        "difficulty",
+        "seed",
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "gamemodes": [],
       "gracefulStop": true,
-      "supportsBackup": true,
-      "readyPattern": "Server started",
-      "stopCommand": "exit",
+      "id": "terraria",
+      "imageAppId": 105600,
+      "info": "Offizieller Dedicated Server",
+      "install": {
+        "kind": "terraria"
+      },
       "joinPattern": "^(.+) has joined\\.$",
       "leavePattern": "^(.+) has left\\.$",
-      "backupPaths": ["worlds"]
+      "minPasswordLen": 0,
+      "name": "Terraria",
+      "passwordRequired": false,
+      "readyPattern": "Server started",
+      "scene": "night",
+      "status": "stable",
+      "stopCommand": "exit",
+      "supportsBackup": true,
+      "variants": []
     },
     {
-      "id": "valheim",
-      "name": "Valheim",
+      "backupPaths": [
+        "save"
+      ],
+      "canSendCommands": false,
       "category": "Survival",
-      "info": "Dedicated Server über SteamCMD",
-      "status": "stable",
-      "scene": "nordic",
-      "imageAppId": 892970,
-      "install": { "kind": "steam", "appId": 896660 },
-      "launch": {
-        "exe": "valheim_server.exe",
-        "args": ["-nographics", "-batchmode", "-name", "{name}", "-port", "{port}", "-world", "{world}", "-password", "{password}", "-public", "1", "-savedir", "{dir}/save"],
-        "env": { "SteamAppId": "892970" }
-      },
-      "extraPorts": [1],
-      "defaultPort": 2456,
       "defaultMaxPlayers": 10,
-      "fields": ["worldName", "password", "port"],
-      "passwordRequired": true,
-      "minPasswordLen": 5,
+      "defaultPort": 2456,
+      "defaultRamMb": 0,
+      "difficulties": [],
       "downloadHint": "ca. 1 GB",
-      "supportsBackup": true,
+      "extraPorts": [
+        1
+      ],
+      "fields": [
+        "worldName",
+        "password",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "valheim",
+      "imageAppId": 892970,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 896660,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-nographics",
+          "-batchmode",
+          "-name",
+          "{name}",
+          "-port",
+          "{port}",
+          "-world",
+          "{world}",
+          "-password",
+          "{password}",
+          "-public",
+          "1",
+          "-savedir",
+          "{dir}/save"
+        ],
+        "env": {
+          "SteamAppId": "892970"
+        },
+        "exe": "valheim_server.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 5,
+      "name": "Valheim",
+      "passwordRequired": true,
       "readyPattern": "Game server connected",
-      "backupPaths": ["save"]
-    },
-    {
-      "id": "palworld",
-      "name": "Palworld",
-      "category": "Survival",
-      "info": "Dedicated Server über SteamCMD",
+      "scene": "nordic",
       "status": "stable",
-      "scene": "tropical",
-      "imageAppId": 1623730,
-      "install": { "kind": "steam", "appId": 2394010 },
-      "launch": {
-        "exe": "PalServer.exe",
-        "args": ["-port={port}", "-players={maxPlayers}", "-useperfthreads", "-NoAsyncLoadingThread", "-UseMultithreadForDS"]
-      },
-      "defaultPort": 8211,
-      "defaultMaxPlayers": 16,
-      "fields": ["maxPlayers", "port"],
-      "downloadHint": "ca. 4 GB",
+      "stopCommand": null,
       "supportsBackup": true,
-      "backupPaths": ["Pal/Saved"]
+      "variants": []
     },
     {
-      "id": "satisfactory",
-      "name": "Satisfactory",
-      "category": "Aufbau",
-      "info": "Dedicated Server über SteamCMD",
-      "status": "stable",
-      "scene": "industrial",
-      "imageAppId": 526870,
-      "install": { "kind": "steam", "appId": 1690800 },
-      "launch": {
-        "exe": "FactoryServer.exe",
-        "args": ["-log", "-unattended", "-Port={port}"]
-      },
-      "defaultPort": 7777,
-      "defaultMaxPlayers": 4,
-      "fields": ["port"],
-      "downloadHint": "ca. 5 GB"
-    },
-    {
-      "id": "7dtd",
-      "name": "7 Days to Die",
+      "backupPaths": [
+        "Pal/Saved"
+      ],
+      "canSendCommands": false,
       "category": "Survival",
+      "defaultMaxPlayers": 16,
+      "defaultPort": 8211,
+      "defaultRamMb": 0,
+      "difficulties": [],
+      "downloadHint": "ca. 4 GB",
+      "extraPorts": [],
+      "fields": [
+        "maxPlayers",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "palworld",
+      "imageAppId": 1623730,
       "info": "Dedicated Server über SteamCMD",
-      "status": "stable",
-      "scene": "dusk",
-      "imageAppId": 251570,
-      "install": { "kind": "steam", "appId": 294420 },
-      "launch": {
-        "exe": "7DaysToDieServer.exe",
-        "args": ["-quit", "-batchmode", "-nographics", "-dedicated", "-configfile=serverconfig.xml", "-logfile", "-"]
+      "install": {
+        "appId": 2394010,
+        "kind": "steam"
       },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-port={port}",
+          "-players={maxPlayers}",
+          "-useperfthreads",
+          "-NoAsyncLoadingThread",
+          "-UseMultithreadForDS"
+        ],
+        "env": {},
+        "exe": "PalServer.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "Palworld",
+      "passwordRequired": false,
+      "readyPattern": null,
+      "scene": "tropical",
+      "status": "stable",
+      "stopCommand": null,
+      "supportsBackup": true,
+      "variants": []
+    },
+    {
+      "backupPaths": [],
+      "canSendCommands": false,
+      "category": "Aufbau",
+      "defaultMaxPlayers": 4,
+      "defaultPort": 7777,
+      "defaultRamMb": 0,
+      "difficulties": [],
+      "downloadHint": "ca. 5 GB",
+      "extraPorts": [],
+      "fields": [
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "satisfactory",
+      "imageAppId": 526870,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 1690800,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-log",
+          "-unattended",
+          "-Port={port}"
+        ],
+        "env": {},
+        "exe": "FactoryServer.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "Satisfactory",
+      "passwordRequired": false,
+      "readyPattern": null,
+      "scene": "industrial",
+      "status": "stable",
+      "stopCommand": null,
+      "supportsBackup": false,
+      "variants": []
+    },
+    {
+      "backupPaths": [],
+      "canSendCommands": false,
+      "category": "Survival",
       "configFiles": [
         {
-          "path": "serverconfig.xml",
+          "content": null,
           "format": "xmlProperty",
           "onlyIfExists": true,
+          "path": "serverconfig.xml",
           "values": {
-            "ServerName": "{name}",
-            "ServerPort": "{port}",
             "ServerMaxPlayerCount": "{maxPlayers}",
-            "ServerPassword": "{password}"
+            "ServerName": "{name}",
+            "ServerPassword": "{password}",
+            "ServerPort": "{port}"
           }
         }
       ],
-      "extraPorts": [1, 2],
-      "defaultPort": 26900,
       "defaultMaxPlayers": 8,
-      "fields": ["maxPlayers", "password", "port"],
+      "defaultPort": 26900,
+      "defaultRamMb": 0,
+      "difficulties": [],
       "downloadHint": "ca. 15 GB",
-      "readyPattern": "StartGame done"
+      "extraPorts": [
+        1,
+        2
+      ],
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "7dtd",
+      "imageAppId": 251570,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 294420,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-quit",
+          "-batchmode",
+          "-nographics",
+          "-dedicated",
+          "-configfile=serverconfig.xml",
+          "-logfile",
+          "-"
+        ],
+        "env": {},
+        "exe": "7DaysToDieServer.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "7 Days to Die",
+      "passwordRequired": false,
+      "readyPattern": "StartGame done",
+      "scene": "dusk",
+      "status": "stable",
+      "stopCommand": null,
+      "supportsBackup": false,
+      "variants": []
     },
     {
-      "id": "ark-sa",
-      "name": "ARK: Survival Ascended",
+      "backupPaths": [
+        "ShooterGame/Saved/SavedArks"
+      ],
+      "canSendCommands": false,
       "category": "Survival",
-      "info": "Dedicated Server über SteamCMD",
-      "status": "stable",
-      "scene": "tropical",
-      "imageAppId": 2399830,
-      "install": { "kind": "steam", "appId": 2430930 },
-      "launch": {
-        "exe": "ShooterGame/Binaries/Win64/ArkAscendedServer.exe",
-        "args": ["TheIsland_WP?listen?SessionName={name}?Port={port}{password:?ServerPassword=%}", "-WinLiveMaxPlayers={maxPlayers}", "-log"]
-      },
+      "defaultMaxPlayers": 10,
       "defaultPort": 7777,
-      "defaultMaxPlayers": 10,
-      "fields": ["maxPlayers", "password", "port"],
+      "defaultRamMb": 0,
+      "difficulties": [],
       "downloadHint": "ca. 13 GB",
+      "extraPorts": [],
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "ark-sa",
+      "imageAppId": 2399830,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 2430930,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "TheIsland_WP?listen?SessionName={name}?Port={port}{password:?ServerPassword=%}",
+          "-WinLiveMaxPlayers={maxPlayers}",
+          "-log"
+        ],
+        "env": {},
+        "exe": "ShooterGame/Binaries/Win64/ArkAscendedServer.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "ARK: Survival Ascended",
+      "passwordRequired": false,
+      "readyPattern": null,
+      "scene": "tropical",
+      "status": "stable",
+      "stopCommand": null,
       "supportsBackup": true,
-      "backupPaths": ["ShooterGame/Saved/SavedArks"]
+      "variants": []
     },
     {
-      "id": "rust",
-      "name": "Rust",
+      "backupPaths": [
+        "server/spawnpoint"
+      ],
+      "canSendCommands": false,
       "category": "Survival",
-      "info": "Dedicated Server über SteamCMD",
-      "status": "stable",
-      "scene": "dusk",
-      "imageAppId": 252490,
-      "install": { "kind": "steam", "appId": 258550 },
-      "launch": {
-        "exe": "RustDedicated.exe",
-        "args": ["-batchmode", "-nographics", "+server.port", "{port}", "+server.hostname", "{name}", "+server.maxplayers", "{maxPlayers}", "+server.identity", "spawnpoint", "+server.seed", "{seed|12345}", "+server.worldsize", "3000", "-logfile", "-"]
-      },
-      "defaultPort": 28015,
       "defaultMaxPlayers": 50,
-      "fields": ["maxPlayers", "seed", "port"],
+      "defaultPort": 28015,
+      "defaultRamMb": 0,
+      "difficulties": [],
       "downloadHint": "ca. 10 GB",
-      "supportsBackup": true,
-      "readyPattern": "Server startup complete",
-      "backupPaths": ["server/spawnpoint"]
-    },
-    {
-      "id": "cs2",
-      "name": "Counter-Strike 2",
-      "category": "Shooter",
+      "extraPorts": [],
+      "fields": [
+        "maxPlayers",
+        "seed",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "rust",
+      "imageAppId": 252490,
       "info": "Dedicated Server über SteamCMD",
-      "status": "stable",
-      "scene": "industrial",
-      "imageAppId": 730,
-      "install": { "kind": "steam", "appId": 730 },
-      "launch": {
-        "exe": "game/bin/win64/cs2.exe",
-        "args": ["-dedicated", "-console", "-usercon", "-port", "{port}", "-maxplayers", "{maxPlayers}", "+map", "de_dust2", { "if": "password", "args": ["+sv_password", "{password}"] }]
+      "install": {
+        "appId": 258550,
+        "kind": "steam"
       },
-      "defaultPort": 27015,
-      "defaultMaxPlayers": 10,
-      "fields": ["maxPlayers", "password", "port"],
-      "downloadHint": "ca. 35 GB",
-      "canSendCommands": true,
-      "gracefulStop": true,
-      "stopCommand": "quit"
-    },
-    {
-      "id": "project-zomboid",
-      "name": "Project Zomboid",
-      "category": "Survival",
-      "info": "Dedicated Server über SteamCMD",
-      "status": "beta",
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-batchmode",
+          "-nographics",
+          "+server.port",
+          "{port}",
+          "+server.hostname",
+          "{name}",
+          "+server.maxplayers",
+          "{maxPlayers}",
+          "+server.identity",
+          "spawnpoint",
+          "+server.seed",
+          "{seed|12345}",
+          "+server.worldsize",
+          "3000",
+          "-logfile",
+          "-"
+        ],
+        "env": {},
+        "exe": "RustDedicated.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "Rust",
+      "passwordRequired": false,
+      "readyPattern": "Server startup complete",
       "scene": "dusk",
-      "imageAppId": 108600,
-      "install": { "kind": "projectZomboid", "appId": 380870 },
-      "extraPorts": [1],
-      "defaultPort": 16261,
-      "defaultMaxPlayers": 16,
-      "defaultRamMb": 4096,
-      "fields": ["maxPlayers", "ram", "password", "port"],
-      "passwordRequired": true,
-      "minPasswordLen": 1,
-      "downloadHint": "ca. 2 GB",
-      "canSendCommands": true,
-      "gracefulStop": true,
+      "status": "stable",
+      "stopCommand": null,
       "supportsBackup": true,
-      "readyPattern": "SERVER STARTED",
-      "stopCommand": "quit",
-      "backupPaths": ["Zomboid/Saves"]
+      "variants": []
     },
     {
-      "id": "enshrouded",
-      "name": "Enshrouded",
-      "category": "Survival",
+      "backupPaths": [],
+      "canSendCommands": true,
+      "category": "Shooter",
+      "defaultMaxPlayers": 10,
+      "defaultPort": 27015,
+      "defaultRamMb": 0,
+      "difficulties": [],
+      "downloadHint": "ca. 35 GB",
+      "extraPorts": [],
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": true,
+      "id": "cs2",
+      "imageAppId": 730,
       "info": "Dedicated Server über SteamCMD",
-      "status": "beta",
-      "scene": "nordic",
-      "imageAppId": 1203620,
-      "install": { "kind": "steam", "appId": 2278520 },
-      "launch": { "exe": "enshrouded_server.exe", "args": [] },
+      "install": {
+        "appId": 730,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-dedicated",
+          "-console",
+          "-usercon",
+          "-port",
+          "{port}",
+          "-maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "de_dust2",
+          {
+            "args": [
+              "+sv_password",
+              "{password}"
+            ],
+            "if": "password"
+          }
+        ],
+        "env": {},
+        "exe": "game/bin/win64/cs2.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "Counter-Strike 2",
+      "passwordRequired": false,
+      "readyPattern": null,
+      "scene": "industrial",
+      "status": "hidden",
+      "stopCommand": "quit",
+      "supportsBackup": false,
+      "variants": []
+    },
+    {
+      "backupPaths": [
+        "Zomboid/Saves"
+      ],
+      "canSendCommands": true,
+      "category": "Survival",
+      "defaultMaxPlayers": 16,
+      "defaultPort": 16261,
+      "defaultRamMb": 4096,
+      "difficulties": [],
+      "downloadHint": "ca. 2 GB",
+      "extraPorts": [
+        1
+      ],
+      "fields": [
+        "maxPlayers",
+        "ram",
+        "password",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": true,
+      "id": "project-zomboid",
+      "imageAppId": 108600,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 380870,
+        "kind": "projectZomboid"
+      },
+      "joinPattern": null,
+      "leavePattern": null,
+      "minPasswordLen": 1,
+      "name": "Project Zomboid",
+      "passwordRequired": true,
+      "readyPattern": "SERVER STARTED",
+      "scene": "dusk",
+      "status": "dev",
+      "stopCommand": "quit",
+      "supportsBackup": true,
+      "variants": []
+    },
+    {
+      "backupPaths": [
+        "savegame"
+      ],
+      "canSendCommands": false,
+      "category": "Survival",
       "configFiles": [
         {
-          "path": "enshrouded_server.json",
+          "content": null,
           "format": "json",
+          "onlyIfExists": false,
+          "path": "enshrouded_server.json",
           "values": {
-            "name": "{name}",
-            "saveDirectory": "./savegame",
-            "logDirectory": "./logs",
-            "ip": "0.0.0.0",
             "gamePort": "{port}",
+            "ip": "0.0.0.0",
+            "logDirectory": "./logs",
+            "name": "{name}",
             "queryPort": "{port+1}",
+            "saveDirectory": "./savegame",
             "slotCount": "{maxPlayers}"
           }
         }
       ],
-      "extraPorts": [1],
-      "defaultPort": 15636,
       "defaultMaxPlayers": 16,
-      "fields": ["maxPlayers", "port"],
+      "defaultPort": 15636,
+      "defaultRamMb": 0,
+      "difficulties": [],
       "downloadHint": "ca. 3 GB",
-      "supportsBackup": true,
+      "extraPorts": [
+        1
+      ],
+      "fields": [
+        "maxPlayers",
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "enshrouded",
+      "imageAppId": 1203620,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 2278520,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [],
+        "env": {},
+        "exe": "enshrouded_server.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "Enshrouded",
+      "passwordRequired": false,
       "readyPattern": "HostOnline",
-      "backupPaths": ["savegame"]
+      "scene": "nordic",
+      "status": "beta",
+      "stopCommand": null,
+      "supportsBackup": true,
+      "variants": []
     },
     {
-      "id": "factorio",
-      "name": "Factorio",
-      "category": "Aufbau",
-      "info": "Nutzt dein installiertes Factorio",
-      "status": "beta",
-      "scene": "industrial",
-      "imageAppId": 427520,
-      "install": { "kind": "factorio" },
-      "defaultPort": 34197,
-      "defaultMaxPlayers": 8,
-      "fields": ["maxPlayers", "password", "port", "gamePath"],
-      "downloadHint": "kein Download, Factorio muss installiert sein",
+      "backupPaths": [
+        "saves"
+      ],
       "canSendCommands": true,
+      "category": "Aufbau",
+      "defaultMaxPlayers": 8,
+      "defaultPort": 34197,
+      "defaultRamMb": 0,
+      "difficulties": [],
+      "downloadHint": "kein Download, Factorio muss installiert sein",
+      "extraPorts": [],
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port",
+        "gamePath"
+      ],
+      "gamemodes": [],
       "gracefulStop": true,
-      "supportsBackup": true,
-      "readyPattern": "to\\(InGame\\)",
-      "stopCommand": "/quit",
+      "id": "factorio",
+      "imageAppId": 427520,
+      "info": "Nutzt dein installiertes Factorio",
+      "install": {
+        "kind": "factorio"
+      },
       "joinPattern": "\\[JOIN\\] (.+) joined the game",
       "leavePattern": "\\[LEAVE\\] (.+) left the game",
-      "backupPaths": ["saves"]
+      "minPasswordLen": 0,
+      "name": "Factorio",
+      "passwordRequired": false,
+      "readyPattern": "to\\(InGame\\)",
+      "scene": "industrial",
+      "status": "beta",
+      "stopCommand": "/quit",
+      "supportsBackup": true,
+      "variants": []
     },
     {
-      "id": "v-rising",
-      "name": "V Rising",
+      "backupPaths": [
+        "save-data"
+      ],
+      "canSendCommands": false,
       "category": "Survival",
-      "info": "Dedicated Server über SteamCMD",
-      "status": "beta",
-      "scene": "night",
-      "imageAppId": 1604030,
-      "install": { "kind": "steam", "appId": 1829350 },
-      "launch": {
-        "exe": "VRisingServer.exe",
-        "args": ["-persistentDataPath", "{dir}/save-data", "-serverName", "{name}", "-saveName", "world1", "-gamePort", "{port}", "-queryPort", "{port+1}", "-logFile", "-"]
-      },
-      "extraPorts": [1],
-      "defaultPort": 9876,
       "defaultMaxPlayers": 40,
-      "fields": ["port"],
+      "defaultPort": 9876,
+      "defaultRamMb": 0,
+      "difficulties": [],
       "downloadHint": "ca. 2 GB",
+      "extraPorts": [
+        1
+      ],
+      "fields": [
+        "port"
+      ],
+      "gamemodes": [],
+      "gracefulStop": false,
+      "id": "v-rising",
+      "imageAppId": 1604030,
+      "info": "Dedicated Server über SteamCMD",
+      "install": {
+        "appId": 1829350,
+        "kind": "steam"
+      },
+      "joinPattern": null,
+      "launch": {
+        "args": [
+          "-persistentDataPath",
+          "{dir}/save-data",
+          "-serverName",
+          "{name}",
+          "-saveName",
+          "world1",
+          "-gamePort",
+          "{port}",
+          "-queryPort",
+          "{port+1}",
+          "-logFile",
+          "-"
+        ],
+        "env": {},
+        "exe": "VRisingServer.exe"
+      },
+      "leavePattern": null,
+      "minPasswordLen": 0,
+      "name": "V Rising",
+      "passwordRequired": false,
+      "readyPattern": null,
+      "scene": "night",
+      "status": "beta",
+      "stopCommand": null,
       "supportsBackup": true,
-      "backupPaths": ["save-data"]
+      "variants": []
     }
-  ]
+  ],
+  "version": 1
 }
