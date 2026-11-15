@@ -1,5 +1,20 @@
 {
   "announcement": null,
+  "announcements": [],
+  "config": {
+    "betaTesters": [],
+    "features": {
+      "backups": true,
+      "create": true,
+      "mods": true,
+      "upnp": true
+    },
+    "maintenance": true,
+    "maintenanceBlockStart": false,
+    "maintenanceMessage": "",
+    "minVersion": "",
+    "minVersionMessage": ""
+  },
   "games": [
     {
       "backupPaths": [
@@ -20,6 +35,7 @@
       ],
       "downloadHint": "ca. 50 MB, Java wird bei Bedarf mitinstalliert",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "version",
         "variant",
@@ -47,6 +63,9 @@
       },
       "joinPattern": "\\]: ([A-Za-z0-9_]{2,16}) joined the game",
       "leavePattern": "\\]: ([A-Za-z0-9_]{2,16}) left the game",
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Minecraft: Java Edition",
       "passwordRequired": false,
@@ -78,6 +97,7 @@
       ],
       "downloadHint": "ca. 100 MB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "gamemode",
         "difficulty",
@@ -101,6 +121,9 @@
       },
       "joinPattern": "Player connected: ([^,]+)",
       "leavePattern": "Player disconnected: ([^,]+)",
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Minecraft: Bedrock Edition",
       "passwordRequired": false,
@@ -128,6 +151,7 @@
       ],
       "downloadHint": "ca. 25 MB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "worldName",
         "difficulty",
@@ -146,6 +170,9 @@
       },
       "joinPattern": "^(.+) has joined\\.$",
       "leavePattern": "^(.+) has left\\.$",
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Terraria",
       "passwordRequired": false,
@@ -170,6 +197,7 @@
       "extraPorts": [
         1
       ],
+      "featured": false,
       "fields": [
         "worldName",
         "password",
@@ -208,6 +236,9 @@
         "exe": "valheim_server.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 5,
       "name": "Valheim",
       "passwordRequired": true,
@@ -230,6 +261,7 @@
       "difficulties": [],
       "downloadHint": "ca. 4 GB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "port"
@@ -256,6 +288,9 @@
         "exe": "PalServer.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Palworld",
       "passwordRequired": false,
@@ -276,6 +311,7 @@
       "difficulties": [],
       "downloadHint": "ca. 5 GB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "port"
       ],
@@ -299,6 +335,9 @@
         "exe": "FactoryServer.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Satisfactory",
       "passwordRequired": false,
@@ -336,6 +375,7 @@
         1,
         2
       ],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "password",
@@ -365,6 +405,9 @@
         "exe": "7DaysToDieServer.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "7 Days to Die",
       "passwordRequired": false,
@@ -387,6 +430,7 @@
       "difficulties": [],
       "downloadHint": "ca. 13 GB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "password",
@@ -412,6 +456,9 @@
         "exe": "ShooterGame/Binaries/Win64/ArkAscendedServer.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "ARK: Survival Ascended",
       "passwordRequired": false,
@@ -434,6 +481,7 @@
       "difficulties": [],
       "downloadHint": "ca. 10 GB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "seed",
@@ -472,6 +520,9 @@
         "exe": "RustDedicated.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Rust",
       "passwordRequired": false,
@@ -492,6 +543,7 @@
       "difficulties": [],
       "downloadHint": "ca. 35 GB",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "password",
@@ -530,6 +582,9 @@
         "exe": "game/bin/win64/cs2.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Counter-Strike 2",
       "passwordRequired": false,
@@ -554,6 +609,7 @@
       "extraPorts": [
         1
       ],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "ram",
@@ -571,6 +627,9 @@
       },
       "joinPattern": null,
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 1,
       "name": "Project Zomboid",
       "passwordRequired": true,
@@ -612,6 +671,7 @@
       "extraPorts": [
         1
       ],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "port"
@@ -632,6 +692,9 @@
         "exe": "enshrouded_server.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Enshrouded",
       "passwordRequired": false,
@@ -654,6 +717,7 @@
       "difficulties": [],
       "downloadHint": "kein Download, Factorio muss installiert sein",
       "extraPorts": [],
+      "featured": false,
       "fields": [
         "maxPlayers",
         "password",
@@ -670,6 +734,9 @@
       },
       "joinPattern": "\\[JOIN\\] (.+) joined the game",
       "leavePattern": "\\[LEAVE\\] (.+) left the game",
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "Factorio",
       "passwordRequired": false,
@@ -694,6 +761,7 @@
       "extraPorts": [
         1
       ],
+      "featured": false,
       "fields": [
         "port"
       ],
@@ -726,6 +794,9 @@
         "exe": "VRisingServer.exe"
       },
       "leavePattern": null,
+      "lockReason": "",
+      "lockRunning": false,
+      "locked": false,
       "minPasswordLen": 0,
       "name": "V Rising",
       "passwordRequired": false,
