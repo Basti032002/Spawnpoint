@@ -1127,9 +1127,9 @@
       "installed": true,
       "joined": false,
       "left": false,
-      "restarted": false,
-      "started": false,
-      "stopped": false,
+      "restarted": true,
+      "started": true,
+      "stopped": true,
       "update": true
     },
     "pickSubtitle": "",
@@ -1138,6 +1138,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794837409241,
+  "updatedAt": 1794837476745,
   "version": 1
 }
