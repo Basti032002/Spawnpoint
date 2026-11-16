@@ -932,7 +932,7 @@
       },
       "minecraft-java": {
         "enabled": true,
-        "nitradoGame": "",
+        "nitradoGame": "minecraft",
         "price": "",
         "url": ""
       },
@@ -956,19 +956,19 @@
       },
       "satisfactory": {
         "enabled": true,
-        "nitradoGame": "",
+        "nitradoGame": "satisfactory",
         "price": "",
         "url": ""
       },
       "terraria": {
         "enabled": true,
-        "nitradoGame": "",
+        "nitradoGame": "terraria",
         "price": "",
         "url": ""
       },
       "valheim": {
         "enabled": true,
-        "nitradoGame": "",
+        "nitradoGame": "valheim",
         "price": "",
         "url": ""
       }
@@ -1025,6 +1025,6 @@
     "sidebarWidth": 252
   },
   "tiles": [],
-  "updatedAt": 1794833734485,
+  "updatedAt": 1794834121380,
   "version": 1
 }
