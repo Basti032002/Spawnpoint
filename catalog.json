@@ -1,18 +1,6 @@
 {
   "announcement": null,
-  "announcements": [
-    {
-      "dismissible": false,
-      "from": "",
-      "id": "f0xsu6if",
-      "level": "warning",
-      "linkLabel": "",
-      "linkUrl": "",
-      "text": "THIS CLIENT IS IN DEVELOPMENT NOT USABLE FOR PUBLIC YET",
-      "title": "DEVELOPMENT",
-      "until": ""
-    }
-  ],
+  "announcements": [],
   "config": {
     "betaTesters": [],
     "features": {
@@ -21,7 +9,7 @@
       "mods": true,
       "upnp": true
     },
-    "maintenance": true,
+    "maintenance": false,
     "maintenanceBlockStart": false,
     "maintenanceMessage": "",
     "minVersion": "",
