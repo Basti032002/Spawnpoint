@@ -905,11 +905,11 @@
   "hosting": {
     "accountUrl": "",
     "apiUrl": "",
-    "enabled": true,
+    "enabled": false,
     "nitrado": {
       "allowToken": false,
       "clientId": "558818",
-      "enabled": true
+      "enabled": false
     },
     "products": {
       "7dtd": {
@@ -974,7 +974,7 @@
       }
     },
     "provider": "Nitrado",
-    "providerKind": "nitrado",
+    "providerKind": "shop",
     "shopUrl": ""
   },
   "schedule": [],
@@ -1039,6 +1039,6 @@
       "until": ""
     }
   ],
-  "updatedAt": 1794836888448,
+  "updatedAt": 1794836961332,
   "version": 1
 }
