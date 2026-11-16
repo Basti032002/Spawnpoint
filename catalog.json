@@ -1029,16 +1029,16 @@
   },
   "schedule": [],
   "startup": {
-    "action": "none",
-    "buttonLabel": "",
-    "enabled": false,
+    "action": "create",
+    "buttonLabel": "Minecraft Server Erstellen",
+    "enabled": true,
     "from": "",
-    "id": "",
-    "image": "",
+    "id": "izkibf",
+    "image": "https://raw.githubusercontent.com/Basti032002/Spawnpoint/main/assets/startfenster-343b6a0e4a.gif",
     "mode": "once",
-    "target": "",
-    "text": "",
-    "title": "",
+    "target": "minecraft-java",
+    "text": "Test",
+    "title": "Test",
     "until": ""
   },
   "theme": {
@@ -1124,6 +1124,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794837543581,
+  "updatedAt": 1794837604580,
   "version": 1
 }
