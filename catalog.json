@@ -822,63 +822,63 @@
   ],
   "hosting": {
     "accountUrl": "",
-    "apiUrl": "https://forge-host.net",
-    "enabled": true,
+    "apiUrl": "",
+    "enabled": false,
     "products": {
       "7dtd": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "ark-sa": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "minecraft-bedrock": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "minecraft-java": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "palworld": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "project-zomboid": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "rust": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "satisfactory": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "terraria": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       },
       "valheim": {
         "enabled": true,
         "price": "",
-        "url": "https://forge-host.net/products/1"
+        "url": ""
       }
     },
     "provider": "Forge-Host",
     "shopUrl": ""
   },
-  "updatedAt": 1794828712801,
+  "updatedAt": 1794831287812,
   "version": 1
 }
