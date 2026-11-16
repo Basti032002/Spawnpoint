@@ -1,6 +1,18 @@
 {
   "announcement": null,
-  "announcements": [],
+  "announcements": [
+    {
+      "dismissible": true,
+      "from": "",
+      "id": "i584dz73",
+      "level": "warning",
+      "linkLabel": "",
+      "linkUrl": "",
+      "text": "THIS APP IS CURRENTLY IN DEVELOPMENT, AND NOT USABLE FOR THE PUBLIC YET!",
+      "title": "DEVELOPMENT",
+      "until": ""
+    }
+  ],
   "config": {
     "betaTesters": [],
     "features": {
@@ -816,5 +828,6 @@
     "provider": "Forge-Host",
     "shopUrl": ""
   },
+  "updatedAt": 1794827303384,
   "version": 1
 }
