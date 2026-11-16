@@ -32,8 +32,8 @@
     "maintenance": false,
     "maintenanceBlockStart": false,
     "maintenanceMessage": "",
-    "minVersion": "0.5.1",
-    "minVersionMessage": "Test",
+    "minVersion": "0.7.1",
+    "minVersionMessage": "Wichtige Fehlerbehebung - Bitte aktualisieren!",
     "rollout": {
       "percent": 100,
       "version": ""
@@ -1025,6 +1025,6 @@
     "sidebarWidth": 252
   },
   "tiles": [],
-  "updatedAt": 1794834216900,
+  "updatedAt": 1794834878047,
   "version": 1
 }
