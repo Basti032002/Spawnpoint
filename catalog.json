@@ -950,6 +950,1468 @@
       "stopCommand": null,
       "supportsBackup": true,
       "variants": []
+    },
+    {
+      "id": "garrys-mod",
+      "name": "Garry's Mod",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "industrial",
+      "imageAppId": 4000,
+      "install": {
+        "kind": "steam",
+        "appId": 4020
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "garrysmod",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "gm_construct",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 16,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 4 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "tf2",
+      "name": "Team Fortress 2",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "industrial",
+      "imageAppId": 440,
+      "install": {
+        "kind": "steam",
+        "appId": 232250
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "tf",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "ctf_2fort",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 24,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 12 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "l4d2",
+      "name": "Left 4 Dead 2",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "dusk",
+      "imageAppId": 550,
+      "install": {
+        "kind": "steam",
+        "appId": 222860
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "left4dead2",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "c1m1_hotel",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 10 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "css",
+      "name": "Counter-Strike: Source",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "industrial",
+      "imageAppId": 240,
+      "install": {
+        "kind": "steam",
+        "appId": 232330
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "cstrike",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "de_dust2",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 16,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 3 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "dods",
+      "name": "Day of Defeat: Source",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "industrial",
+      "imageAppId": 300,
+      "install": {
+        "kind": "steam",
+        "appId": 232290
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "dod",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "dod_anzio",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 16,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 3 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "hl2dm",
+      "name": "Half-Life 2: Deathmatch",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "industrial",
+      "imageAppId": 320,
+      "install": {
+        "kind": "steam",
+        "appId": 232370
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "hl2mp",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "dm_lockdown",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 16,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 3 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "nmrih",
+      "name": "No More Room in Hell",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "night",
+      "imageAppId": 224260,
+      "install": {
+        "kind": "steam",
+        "appId": 317670
+      },
+      "launch": {
+        "exe": "srcds.exe",
+        "args": [
+          "-console",
+          "-game",
+          "nmrih",
+          "-port",
+          "{port}",
+          "+maxplayers",
+          "{maxPlayers}",
+          "+map",
+          "nmo_broadway",
+          {
+            "if": "password",
+            "args": [
+              "+sv_password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 6 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "ark-se",
+      "name": "ARK: Survival Evolved",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "tropical",
+      "imageAppId": 346110,
+      "install": {
+        "kind": "steam",
+        "appId": 376030
+      },
+      "launch": {
+        "exe": "ShooterGame/Binaries/Win64/ShooterGameServer.exe",
+        "args": [
+          "TheIsland?listen?SessionName={name}?Port={port}?QueryPort={port+2}?MaxPlayers={maxPlayers}{password:?ServerPassword=%}",
+          "-server",
+          "-log"
+        ],
+        "env": {}
+      },
+      "defaultPort": 7777,
+      "defaultMaxPlayers": 10,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1,
+        2
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 20 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "ShooterGame/Saved/SavedArks"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "conan-exiles",
+      "name": "Conan Exiles",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "dusk",
+      "imageAppId": 440900,
+      "install": {
+        "kind": "steam",
+        "appId": 443030
+      },
+      "launch": {
+        "exe": "ConanSandboxServer.exe",
+        "args": [
+          "-log",
+          "-MaxPlayers={maxPlayers}",
+          "-Port={port}",
+          "-QueryPort={port+1}"
+        ],
+        "env": {}
+      },
+      "defaultPort": 7777,
+      "defaultMaxPlayers": 20,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 7 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "ConanSandbox/Saved"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "the-forest",
+      "name": "The Forest",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "nordic",
+      "imageAppId": 242760,
+      "install": {
+        "kind": "steam",
+        "appId": 556450
+      },
+      "launch": {
+        "exe": "TheForestDedicatedServer.exe",
+        "args": [
+          "-batchmode",
+          "-nographics",
+          "-serverip",
+          "0.0.0.0",
+          "-servergameport",
+          "{port}",
+          "-serverqueryport",
+          "{port+1}",
+          "-serversteamport",
+          "{port+2}",
+          "-servername",
+          "{name}",
+          "-serverplayers",
+          "{maxPlayers}",
+          {
+            "if": "password",
+            "args": [
+              "-serverpassword",
+              "{password}"
+            ]
+          },
+          "-inittype",
+          "Continue"
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1,
+        2
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 3 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "sons-of-the-forest",
+      "name": "Sons of the Forest",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "nordic",
+      "imageAppId": 1326470,
+      "install": {
+        "kind": "steam",
+        "appId": 2465200
+      },
+      "launch": {
+        "exe": "SonsOfTheForestDS.exe",
+        "args": [
+          "-userdatapath",
+          "{dir}/userdata",
+          "-dedicatedserver.GamePort",
+          "{port}",
+          "-dedicatedserver.QueryPort",
+          "{port+1}",
+          "-dedicatedserver.BlobSyncPort",
+          "{port+2}",
+          "-dedicatedserver.ServerName",
+          "{name}",
+          "-dedicatedserver.MaxPlayers",
+          "{maxPlayers}",
+          {
+            "if": "password",
+            "args": [
+              "-dedicatedserver.Password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 8766,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1,
+        2
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 4 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "userdata/Saves"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "core-keeper",
+      "name": "Core Keeper",
+      "category": "Sandbox",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "night",
+      "imageAppId": 1621690,
+      "install": {
+        "kind": "steam",
+        "appId": 1963720
+      },
+      "launch": {
+        "exe": "CoreKeeperServer.exe",
+        "args": [
+          "-batchmode",
+          "-logfile",
+          "-",
+          "-world",
+          "0",
+          "-worldname",
+          "{name}",
+          "-maxplayers",
+          "{maxPlayers}",
+          "-datapath",
+          "{dir}/saves",
+          "-port",
+          "{port}"
+        ],
+        "env": {}
+      },
+      "defaultPort": 27015,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 0,5 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "saves"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "icarus",
+      "name": "Icarus",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "tropical",
+      "imageAppId": 1149460,
+      "install": {
+        "kind": "steam",
+        "appId": 2089300
+      },
+      "launch": {
+        "exe": "Icarus/Binaries/Win64/IcarusServer-Win64-Shipping.exe",
+        "args": [
+          "-Log",
+          "-SteamServerName={name}",
+          "-PORT={port}",
+          "-QueryPort={port+1}"
+        ],
+        "env": {}
+      },
+      "defaultPort": 17777,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 6 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "Icarus/Saved"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "abiotic-factor",
+      "name": "Abiotic Factor",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "industrial",
+      "imageAppId": 427410,
+      "install": {
+        "kind": "steam",
+        "appId": 2857200
+      },
+      "launch": {
+        "exe": "AbioticFactor/Binaries/Win64/AbioticFactorServer-Win64-Shipping.exe",
+        "args": [
+          "-log",
+          "-useperfthreads",
+          "-NoAsyncLoadingThread",
+          "-MaxServerPlayers={maxPlayers}",
+          "-PORT={port}",
+          "-QueryPort={port+1}",
+          "-SteamServerName={name}",
+          {
+            "if": "password",
+            "args": [
+              "-ServerPassword={password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 7777,
+      "defaultMaxPlayers": 6,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 4 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "AbioticFactor/Saved/SaveGames"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "soulmask",
+      "name": "Soulmask",
+      "category": "Survival",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "tropical",
+      "imageAppId": 2646460,
+      "install": {
+        "kind": "steam",
+        "appId": 3017310
+      },
+      "launch": {
+        "exe": "WS/Binaries/Win64/WSServer-Win64-Shipping.exe",
+        "args": [
+          "Level01_Main",
+          "-server",
+          "-log",
+          "-UTF8Output",
+          "-forcepassthrough",
+          "-MULTIHOME=0.0.0.0",
+          "-Port={port}",
+          "-QueryPort={port+1}",
+          "-EchoPort={port+2}",
+          "-SteamServerName={name}",
+          "-MaxPlayers={maxPlayers}",
+          {
+            "if": "password",
+            "args": [
+              "-PSW={password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 8777,
+      "defaultMaxPlayers": 20,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 9 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "WS/Saved"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "avorion",
+      "name": "Avorion",
+      "category": "Aufbau",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "night",
+      "imageAppId": 445220,
+      "install": {
+        "kind": "steam",
+        "appId": 565060
+      },
+      "launch": {
+        "exe": "bin/AvorionServer.exe",
+        "args": [
+          "--galaxy-name",
+          "{world}",
+          "--datapath",
+          "{dir}/galaxies",
+          "--port",
+          "{port}",
+          "--query-port",
+          "{port+3}",
+          "--steam-query-port",
+          "{port+20}",
+          "--steam-master-port",
+          "{port+21}",
+          "--max-players",
+          "{maxPlayers}",
+          "--server-name",
+          "{name}"
+        ],
+        "env": {}
+      },
+      "defaultPort": 27000,
+      "defaultMaxPlayers": 10,
+      "defaultRamMb": 0,
+      "fields": [
+        "worldName",
+        "maxPlayers",
+        "port"
+      ],
+      "extraPorts": [
+        3,
+        20,
+        21
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 1 GB",
+      "canSendCommands": true,
+      "gracefulStop": true,
+      "stopCommand": "/stop",
+      "supportsBackup": true,
+      "backupPaths": [
+        "galaxies"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "necesse",
+      "name": "Necesse",
+      "category": "Sandbox",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "sandbox",
+      "imageAppId": 1169040,
+      "install": {
+        "kind": "steam",
+        "appId": 1169370
+      },
+      "launch": {
+        "exe": "jre/bin/java.exe",
+        "args": [
+          "-jar",
+          "Server.jar",
+          "-nogui",
+          "-localdir",
+          "-world",
+          "{world}",
+          "-port",
+          "{port}",
+          "-slots",
+          "{maxPlayers}",
+          {
+            "if": "password",
+            "args": [
+              "-password",
+              "{password}"
+            ]
+          }
+        ],
+        "env": {}
+      },
+      "defaultPort": 14159,
+      "defaultMaxPlayers": 10,
+      "defaultRamMb": 0,
+      "fields": [
+        "worldName",
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 0,5 GB",
+      "canSendCommands": true,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "saves"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "eco",
+      "name": "Eco",
+      "category": "Aufbau",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "sandbox",
+      "imageAppId": 382310,
+      "install": {
+        "kind": "steam",
+        "appId": 739590
+      },
+      "launch": {
+        "exe": "EcoServer.exe",
+        "args": [],
+        "env": {}
+      },
+      "defaultPort": 3000,
+      "defaultMaxPlayers": 20,
+      "defaultRamMb": 0,
+      "fields": [
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 2 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "Storage"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": [],
+      "configFiles": [
+        {
+          "path": "Configs/Network.eco",
+          "format": "json",
+          "values": {
+            "GameServerPort": "{port}",
+            "WebServerPort": "{port+1}"
+          },
+          "content": null,
+          "onlyIfExists": true
+        }
+      ]
+    },
+    {
+      "id": "mordhau",
+      "name": "Mordhau",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "dusk",
+      "imageAppId": 629760,
+      "install": {
+        "kind": "steam",
+        "appId": 629800
+      },
+      "launch": {
+        "exe": "MordhauServer.exe",
+        "args": [
+          "-log",
+          "-Port={port}",
+          "-QueryPort={port+1}",
+          "-BeaconPort={port+2}"
+        ],
+        "env": {}
+      },
+      "defaultPort": 7777,
+      "defaultMaxPlayers": 16,
+      "defaultRamMb": 0,
+      "fields": [
+        "port"
+      ],
+      "extraPorts": [
+        1,
+        2
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 5 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "kf2",
+      "name": "Killing Floor 2",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "night",
+      "imageAppId": 232090,
+      "install": {
+        "kind": "steam",
+        "appId": 232130
+      },
+      "launch": {
+        "exe": "Binaries/Win64/KFServer.exe",
+        "args": [
+          "KF-BioticsLab?MaxPlayers={maxPlayers}{password:?GamePassword=%}",
+          "-Port={port}",
+          "-QueryPort={port+1}"
+        ],
+        "env": {}
+      },
+      "defaultPort": 7777,
+      "defaultMaxPlayers": 6,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 30 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "squad",
+      "name": "Squad",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "dusk",
+      "imageAppId": 393380,
+      "install": {
+        "kind": "steam",
+        "appId": 403240
+      },
+      "launch": {
+        "exe": "SquadGameServer.exe",
+        "args": [
+          "Port={port}",
+          "QueryPort={port+1}",
+          "beaconport={port+2}",
+          "FIXEDMAXPLAYERS={maxPlayers}",
+          "-log"
+        ],
+        "env": {}
+      },
+      "defaultPort": 7787,
+      "defaultMaxPlayers": 40,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "port"
+      ],
+      "extraPorts": [
+        1,
+        2
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 60 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "insurgency-sandstorm",
+      "name": "Insurgency: Sandstorm",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "dusk",
+      "imageAppId": 581320,
+      "install": {
+        "kind": "steam",
+        "appId": 581330
+      },
+      "launch": {
+        "exe": "Insurgency/Binaries/Win64/InsurgencyServer-Win64-Shipping.exe",
+        "args": [
+          "Farmhouse?Scenario=Scenario_Farmhouse_Checkpoint_Security?MaxPlayers={maxPlayers}{password:?Password=%}",
+          "-Port={port}",
+          "-QueryPort={port+1}",
+          "-hostname={name}",
+          "-log"
+        ],
+        "env": {}
+      },
+      "defaultPort": 27102,
+      "defaultMaxPlayers": 8,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 30 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": false,
+      "backupPaths": [],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": []
+    },
+    {
+      "id": "arma-reforger",
+      "name": "Arma Reforger",
+      "category": "Shooter",
+      "info": "Dedicated Server über SteamCMD",
+      "status": "beta",
+      "scene": "nordic",
+      "imageAppId": 1874880,
+      "install": {
+        "kind": "steam",
+        "appId": 1874900
+      },
+      "launch": {
+        "exe": "ArmaReforgerServer.exe",
+        "args": [
+          "-config",
+          "{dir}/spawnpoint-config.json",
+          "-profile",
+          "{dir}/profile",
+          "-maxFPS",
+          "60"
+        ],
+        "env": {}
+      },
+      "defaultPort": 2001,
+      "defaultMaxPlayers": 32,
+      "defaultRamMb": 0,
+      "fields": [
+        "maxPlayers",
+        "password",
+        "port"
+      ],
+      "extraPorts": [
+        1
+      ],
+      "variants": [],
+      "gamemodes": [],
+      "difficulties": [],
+      "passwordRequired": false,
+      "minPasswordLen": 0,
+      "downloadHint": "ca. 20 GB",
+      "canSendCommands": false,
+      "gracefulStop": false,
+      "stopCommand": null,
+      "supportsBackup": true,
+      "backupPaths": [
+        "profile"
+      ],
+      "readyPattern": null,
+      "joinPattern": null,
+      "leavePattern": null,
+      "featured": false,
+      "locked": false,
+      "lockReason": "",
+      "lockRunning": false,
+      "image": "",
+      "badge": "Neu",
+      "recommendedMods": [],
+      "configFiles": [
+        {
+          "path": "spawnpoint-config.json",
+          "format": "text",
+          "values": {},
+          "onlyIfExists": false,
+          "content": "{\n  \"bindAddress\": \"0.0.0.0\",\n  \"bindPort\": {port},\n  \"publicAddress\": \"\",\n  \"publicPort\": {port},\n  \"a2s\": { \"address\": \"0.0.0.0\", \"port\": {port+1} },\n  \"game\": {\n    \"name\": \"{name}\",\n    \"password\": \"{password}\",\n    \"passwordAdmin\": \"\",\n    \"admins\": [],\n    \"scenarioId\": \"{ECC61978EDCC2B5A}Missions/23_Campaign.conf\",\n    \"maxPlayers\": {maxPlayers},\n    \"visible\": true,\n    \"gameProperties\": { \"serverMaxViewDistance\": 2500, \"networkViewDistance\": 1000, \"disableThirdPerson\": false, \"fastValidation\": true, \"battlEye\": true },\n    \"mods\": []\n  }\n}\n"
+        }
+      ]
     }
   ],
   "hosting": {
@@ -1124,6 +2586,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794837645434,
+  "updatedAt": 1794838117700,
   "version": 1
 }
