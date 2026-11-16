@@ -822,12 +822,18 @@
   ],
   "hosting": {
     "accountUrl": "",
-    "apiUrl": "",
+    "apiUrl": "https://forge-host.net",
     "enabled": true,
-    "products": {},
+    "products": {
+      "minecraft-java": {
+        "enabled": true,
+        "price": "",
+        "url": "https://forge-host.net/products/1"
+      }
+    },
     "provider": "Forge-Host",
     "shopUrl": ""
   },
-  "updatedAt": 1794827332055,
+  "updatedAt": 1794827425619,
   "version": 1
 }
