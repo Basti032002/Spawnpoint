@@ -823,11 +823,11 @@
   "hosting": {
     "accountUrl": "",
     "apiUrl": "",
-    "enabled": false,
+    "enabled": true,
     "products": {},
     "provider": "Forge-Host",
     "shopUrl": ""
   },
-  "updatedAt": 1794827322773,
+  "updatedAt": 1794827332055,
   "version": 1
 }
