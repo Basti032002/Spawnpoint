@@ -38,11 +38,15 @@
       "create": true,
       "delete": true,
       "files": true,
+      "invite": true,
+      "modpacks": true,
       "mods": true,
       "notifications": true,
       "players": true,
       "rent": true,
+      "tunnel": true,
       "upnp": true,
+      "workshop": true,
       "worldImport": true
     },
     "limits": {
@@ -127,11 +131,13 @@
       "status": "stable",
       "stopCommand": "stop",
       "supportsBackup": true,
+      "tunnel": null,
       "variants": [
         "paper",
         "vanilla",
         "fabric"
-      ]
+      ],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -192,7 +198,9 @@
       "status": "stable",
       "stopCommand": "stop",
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -248,7 +256,9 @@
       "status": "stable",
       "stopCommand": "exit",
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -321,7 +331,9 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -380,7 +392,9 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -434,7 +448,9 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -511,7 +527,9 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -569,7 +587,9 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -640,7 +660,9 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -709,7 +731,9 @@
       "status": "stable",
       "stopCommand": "quit",
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -761,7 +785,9 @@
       "status": "stable",
       "stopCommand": "quit",
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -830,10 +856,12 @@
       "readyPattern": "HostOnline",
       "recommendedMods": [],
       "scene": "nordic",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -879,10 +907,12 @@
       "readyPattern": "to\\(InGame\\)",
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": "/quit",
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -946,10 +976,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "night",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1015,10 +1047,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1084,10 +1118,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1153,10 +1189,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "dusk",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1222,10 +1260,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1291,10 +1331,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1360,10 +1402,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1429,10 +1473,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "night",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1490,10 +1536,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "tropical",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1550,10 +1598,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "dusk",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -1629,10 +1679,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "nordic",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1706,10 +1758,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "nordic",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1775,10 +1829,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "night",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1834,10 +1890,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "tropical",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1904,10 +1962,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -1978,10 +2038,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "tropical",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -2053,10 +2115,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "night",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": "/stop",
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -2126,10 +2190,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "sandbox",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -2192,10 +2258,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "sandbox",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -2250,10 +2318,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "dusk",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -2308,10 +2378,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "night",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -2368,10 +2440,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "dusk",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [],
@@ -2428,10 +2502,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "dusk",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     },
     {
       "backupPaths": [
@@ -2500,10 +2576,12 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "nordic",
-      "status": "beta",
+      "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "variants": []
+      "tunnel": null,
+      "variants": [],
+      "workshop": null
     }
   ],
   "hosting": {
@@ -2678,6 +2756,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794838424354,
+  "updatedAt": 1794843472996,
   "version": 1
 }
