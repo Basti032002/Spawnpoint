@@ -908,7 +908,7 @@
     "enabled": true,
     "nitrado": {
       "allowToken": false,
-      "clientId": "",
+      "clientId": "558818",
       "enabled": true
     },
     "products": {
@@ -1039,6 +1039,6 @@
       "until": ""
     }
   ],
-  "updatedAt": 1794836092150,
+  "updatedAt": 1794836888448,
   "version": 1
 }
