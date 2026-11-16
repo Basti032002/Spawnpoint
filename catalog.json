@@ -706,7 +706,7 @@
       "readyPattern": null,
       "recommendedMods": [],
       "scene": "industrial",
-      "status": "hidden",
+      "status": "stable",
       "stopCommand": "quit",
       "supportsBackup": false,
       "variants": []
@@ -758,7 +758,7 @@
       "readyPattern": "SERVER STARTED",
       "recommendedMods": [],
       "scene": "dusk",
-      "status": "dev",
+      "status": "stable",
       "stopCommand": "quit",
       "supportsBackup": true,
       "variants": []
@@ -1138,6 +1138,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794837476745,
+  "updatedAt": 1794837497020,
   "version": 1
 }
