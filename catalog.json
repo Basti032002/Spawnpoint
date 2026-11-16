@@ -2,7 +2,7 @@
   "announcement": null,
   "announcements": [
     {
-      "dismissible": true,
+      "dismissible": false,
       "from": "",
       "id": "i584dz73",
       "level": "warning",
@@ -828,6 +828,6 @@
     "provider": "Forge-Host",
     "shopUrl": ""
   },
-  "updatedAt": 1794827303384,
+  "updatedAt": 1794827322773,
   "version": 1
 }
