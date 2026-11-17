@@ -2662,7 +2662,56 @@
   },
   "pages": [],
   "schedule": [],
-  "sidebar": [],
+  "sidebar": [
+    {
+      "area": "nav",
+      "height": 40,
+      "icon": "",
+      "id": "builtin-servers",
+      "image": "",
+      "key": "servers",
+      "kind": "builtin",
+      "label": "",
+      "pageId": "",
+      "url": ""
+    },
+    {
+      "area": "nav",
+      "height": 40,
+      "icon": "",
+      "id": "builtin-create",
+      "image": "",
+      "key": "create",
+      "kind": "builtin",
+      "label": "",
+      "pageId": "",
+      "url": ""
+    },
+    {
+      "area": "nav",
+      "height": 40,
+      "icon": "",
+      "id": "builtin-settings",
+      "image": "",
+      "key": "settings",
+      "kind": "builtin",
+      "label": "",
+      "pageId": "",
+      "url": ""
+    },
+    {
+      "area": "foot",
+      "height": 40,
+      "icon": "",
+      "id": "vmqkjwr7",
+      "image": "https://raw.githubusercontent.com/Basti032002/Spawnpoint/main/assets/leiste-vmqkjwr7-81f61d781d.svg",
+      "key": "",
+      "kind": "logo",
+      "label": "Partner",
+      "pageId": "",
+      "url": "https://server.nitrado.net/"
+    }
+  ],
   "startup": {
     "action": "none",
     "buttonLabel": "Minecraft Server Erstellen",
@@ -2773,6 +2822,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794915679646,
+  "updatedAt": 1794915757796,
   "version": 1
 }
