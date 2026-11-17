@@ -2710,6 +2710,18 @@
       "label": "Partner",
       "pageId": "",
       "url": "https://server.nitrado.net/"
+    },
+    {
+      "area": "nav",
+      "height": 40,
+      "icon": "",
+      "id": "ejzjt6aq",
+      "image": "",
+      "key": "",
+      "kind": "divider",
+      "label": "",
+      "pageId": "",
+      "url": ""
     }
   ],
   "startup": {
@@ -2822,6 +2834,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794915757796,
+  "updatedAt": 1794916097919,
   "version": 1
 }
