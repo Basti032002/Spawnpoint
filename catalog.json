@@ -113,7 +113,7 @@
       "id": "minecraft-java",
       "image": "",
       "imageAppId": null,
-      "info": "Paper, Vanilla oder Fabric",
+      "info": "Paper, Vanilla, Fabric, Forge, NeoForge, Quilt – auch Modpacks",
       "install": {
         "kind": "minecraftJava"
       },
@@ -135,9 +135,201 @@
       "variants": [
         "paper",
         "vanilla",
-        "fabric"
+        "fabric",
+        "forge",
+        "neoforge",
+        "quilt"
       ],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "pvp",
+          "label": "PvP",
+          "kind": "bool",
+          "default": "true",
+          "help": "Spieler können sich gegenseitig Schaden zufügen.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "spawn-monsters",
+          "label": "Monster",
+          "kind": "bool",
+          "default": "true",
+          "help": "Feindliche Kreaturen erscheinen in der Welt.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "allow-nether",
+          "label": "Nether",
+          "kind": "bool",
+          "default": "true",
+          "help": "Spieler können in den Nether reisen.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "allow-flight",
+          "label": "Fliegen erlauben",
+          "kind": "bool",
+          "default": "false",
+          "help": "Verhindert, dass Spieler mit Flug-Mods vom Server geworfen werden. Bei Modpacks oft nötig.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "force-gamemode",
+          "label": "Spielmodus erzwingen",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler bekommen beim Beitreten immer den Spielmodus des Servers.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "enable-command-block",
+          "label": "Befehlsblöcke",
+          "kind": "bool",
+          "default": "false",
+          "help": "Befehlsblöcke funktionieren auf dem Server.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "spawn-protection",
+          "label": "Spawn-Schutz",
+          "kind": "int",
+          "default": "16",
+          "min": 0,
+          "max": 256,
+          "help": "Radius in Blöcken um den Spawn, in dem nur Operatoren bauen können. 0 = aus.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "level-type",
+          "label": "Welttyp",
+          "kind": "enum",
+          "default": "minecraft:normal",
+          "options": [
+            {
+              "value": "minecraft:normal",
+              "label": "Normal"
+            },
+            {
+              "value": "minecraft:flat",
+              "label": "Flachland"
+            },
+            {
+              "value": "minecraft:large_biomes",
+              "label": "Große Biome"
+            },
+            {
+              "value": "minecraft:amplified",
+              "label": "Zerklüftet"
+            }
+          ],
+          "help": "Gilt nur für eine neu erzeugte Welt.",
+          "group": "Welt",
+          "newWorldOnly": true,
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "generate-structures",
+          "label": "Strukturen",
+          "kind": "bool",
+          "default": "true",
+          "help": "Dörfer, Tempel usw. werden erzeugt. Gilt nur für neue Gebiete.",
+          "group": "Welt",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "view-distance",
+          "label": "Sichtweite",
+          "kind": "int",
+          "default": "10",
+          "min": 3,
+          "max": 32,
+          "help": "In Chunks. Weniger = weniger Last für den Server.",
+          "group": "Leistung",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "simulation-distance",
+          "label": "Simulationsweite",
+          "kind": "int",
+          "default": "10",
+          "min": 3,
+          "max": 32,
+          "help": "In Chunks: wie weit um Spieler herum die Welt „lebt“.",
+          "group": "Leistung",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "white-list",
+          "label": "Whitelist",
+          "kind": "bool",
+          "default": "false",
+          "help": "Nur Spieler auf der Whitelist dürfen beitreten.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "enforce-whitelist",
+          "label": "Whitelist sofort durchsetzen",
+          "kind": "bool",
+          "default": "false",
+          "help": "Wirft Spieler, die nicht (mehr) auf der Whitelist stehen, sofort vom Server.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "online-mode",
+          "label": "Nur echte Minecraft-Konten",
+          "kind": "bool",
+          "default": "true",
+          "help": "Aus nur, wenn du genau weißt warum – ohne Prüfung kann sich jeder als jeder ausgeben.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "player-idle-timeout",
+          "label": "Inaktive Spieler kicken nach",
+          "kind": "int",
+          "default": "0",
+          "min": 0,
+          "max": 1440,
+          "help": "Minuten ohne Aktivität. 0 = nie.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "hide-online-players",
+          "label": "Spielerliste verbergen",
+          "kind": "bool",
+          "default": "false",
+          "help": "Die Serverliste zeigt nicht, wer online ist.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -200,7 +392,109 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "allow-cheats",
+          "label": "Cheats erlauben",
+          "kind": "bool",
+          "default": "false",
+          "help": "Befehle wie /give und /tp funktionieren.",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "default-player-permission-level",
+          "label": "Rechte neuer Spieler",
+          "kind": "enum",
+          "default": "member",
+          "options": [
+            {
+              "value": "visitor",
+              "label": "Besucher (nur zuschauen)"
+            },
+            {
+              "value": "member",
+              "label": "Mitglied"
+            },
+            {
+              "value": "operator",
+              "label": "Operator"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "view-distance",
+          "label": "Sichtweite",
+          "kind": "int",
+          "default": "32",
+          "min": 5,
+          "max": 96,
+          "help": "In Chunks.",
+          "group": "Leistung",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "tick-distance",
+          "label": "Simulationsweite",
+          "kind": "int",
+          "default": "4",
+          "min": 4,
+          "max": 12,
+          "help": "In Chunks: wie weit um Spieler herum die Welt „lebt“.",
+          "group": "Leistung",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "allow-list",
+          "label": "Allowlist",
+          "kind": "bool",
+          "default": "false",
+          "help": "Nur freigeschaltete Spieler dürfen beitreten.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "online-mode",
+          "label": "Xbox-Anmeldung prüfen",
+          "kind": "bool",
+          "default": "true",
+          "help": "Spieler müssen mit einem Microsoft-Konto angemeldet sein.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "player-idle-timeout",
+          "label": "Inaktive Spieler kicken nach",
+          "kind": "int",
+          "default": "30",
+          "min": 0,
+          "max": 1440,
+          "help": "Minuten. 0 = nie.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        },
+        {
+          "key": "texturepack-required",
+          "label": "Ressourcenpakete erzwingen",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler müssen die Pakete des Servers laden.",
+          "group": "Zugang",
+          "file": "server.properties",
+          "format": "properties"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -258,7 +552,68 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "autocreate",
+          "label": "Weltgröße",
+          "kind": "enum",
+          "default": "2",
+          "options": [
+            {
+              "value": "1",
+              "label": "Klein"
+            },
+            {
+              "value": "2",
+              "label": "Mittel"
+            },
+            {
+              "value": "3",
+              "label": "Groß"
+            }
+          ],
+          "help": "Gilt nur für eine neu erzeugte Welt.",
+          "group": "Welt",
+          "newWorldOnly": true,
+          "file": "serverconfig.txt",
+          "format": "properties"
+        },
+        {
+          "key": "motd",
+          "label": "Begrüßung",
+          "kind": "text",
+          "default": "",
+          "help": "Nachricht, die Spieler beim Beitreten sehen.",
+          "group": "Allgemein",
+          "file": "serverconfig.txt",
+          "format": "properties"
+        },
+        {
+          "key": "secure",
+          "label": "Cheat-Schutz",
+          "kind": "bool",
+          "default": "true",
+          "help": "Erkennt und kickt Spieler mit offensichtlichen Cheats.",
+          "group": "Allgemein",
+          "trueValue": "1",
+          "falseValue": "0",
+          "file": "serverconfig.txt",
+          "format": "properties"
+        },
+        {
+          "key": "npcstream",
+          "label": "NPC-Übertragung",
+          "kind": "int",
+          "default": "60",
+          "min": 0,
+          "max": 600,
+          "help": "Kleinere Werte verringern Ruckeln von Gegnern, brauchen aber mehr Bandbreite. 0 = aus.",
+          "group": "Leistung",
+          "file": "serverconfig.txt",
+          "format": "properties"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -309,9 +664,66 @@
           "-password",
           "{password}",
           "-public",
-          "1",
+          "{set.public}",
           "-savedir",
-          "{dir}/save"
+          "{dir}/save",
+          "-saveinterval",
+          "{set.saveinterval}",
+          "-backups",
+          "{set.backups}",
+          {
+            "if": "set.preset",
+            "args": [
+              "-preset",
+              "{set.preset}"
+            ]
+          },
+          {
+            "if": "set.combat",
+            "args": [
+              "-modifier",
+              "combat",
+              "{set.combat}"
+            ]
+          },
+          {
+            "if": "set.deathpenalty",
+            "args": [
+              "-modifier",
+              "deathpenalty",
+              "{set.deathpenalty}"
+            ]
+          },
+          {
+            "if": "set.resources",
+            "args": [
+              "-modifier",
+              "resources",
+              "{set.resources}"
+            ]
+          },
+          {
+            "if": "set.raids",
+            "args": [
+              "-modifier",
+              "raids",
+              "{set.raids}"
+            ]
+          },
+          {
+            "if": "set.portals",
+            "args": [
+              "-modifier",
+              "portals",
+              "{set.portals}"
+            ]
+          },
+          {
+            "if": "set.crossplay",
+            "args": [
+              "-crossplay"
+            ]
+          }
         ],
         "env": {
           "SteamAppId": "892970"
@@ -331,9 +743,257 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "tunnel": null,
+      "tunnel": {
+        "proto": "udp"
+      },
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "preset",
+          "label": "Schwierigkeit",
+          "kind": "enum",
+          "default": "normal",
+          "options": [
+            {
+              "value": "normal",
+              "label": "Normal"
+            },
+            {
+              "value": "casual",
+              "label": "Gemütlich"
+            },
+            {
+              "value": "easy",
+              "label": "Leicht"
+            },
+            {
+              "value": "hard",
+              "label": "Schwer"
+            },
+            {
+              "value": "hardcore",
+              "label": "Hardcore"
+            },
+            {
+              "value": "immersive",
+              "label": "Immersiv"
+            },
+            {
+              "value": "hammer",
+              "label": "Nur bauen"
+            }
+          ],
+          "help": "Voreinstellung für die Welt.",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "combat",
+          "label": "Kampf",
+          "kind": "enum",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Wie Voreinstellung"
+            },
+            {
+              "value": "veryeasy",
+              "label": "Sehr leicht"
+            },
+            {
+              "value": "easy",
+              "label": "Leicht"
+            },
+            {
+              "value": "hard",
+              "label": "Schwer"
+            },
+            {
+              "value": "veryhard",
+              "label": "Sehr schwer"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "deathpenalty",
+          "label": "Strafe beim Tod",
+          "kind": "enum",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Wie Voreinstellung"
+            },
+            {
+              "value": "casual",
+              "label": "Keine"
+            },
+            {
+              "value": "veryeasy",
+              "label": "Sehr gering"
+            },
+            {
+              "value": "easy",
+              "label": "Gering"
+            },
+            {
+              "value": "hard",
+              "label": "Hoch"
+            },
+            {
+              "value": "hardcore",
+              "label": "Alles verlieren"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "resources",
+          "label": "Rohstoffe",
+          "kind": "enum",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Wie Voreinstellung"
+            },
+            {
+              "value": "muchless",
+              "label": "Viel weniger"
+            },
+            {
+              "value": "less",
+              "label": "Weniger"
+            },
+            {
+              "value": "more",
+              "label": "Mehr"
+            },
+            {
+              "value": "muchmore",
+              "label": "Viel mehr"
+            },
+            {
+              "value": "most",
+              "label": "Am meisten"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "raids",
+          "label": "Überfälle",
+          "kind": "enum",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Wie Voreinstellung"
+            },
+            {
+              "value": "none",
+              "label": "Keine"
+            },
+            {
+              "value": "muchless",
+              "label": "Viel seltener"
+            },
+            {
+              "value": "less",
+              "label": "Seltener"
+            },
+            {
+              "value": "more",
+              "label": "Häufiger"
+            },
+            {
+              "value": "muchmore",
+              "label": "Viel häufiger"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "portals",
+          "label": "Portale",
+          "kind": "enum",
+          "default": "",
+          "options": [
+            {
+              "value": "",
+              "label": "Wie Voreinstellung"
+            },
+            {
+              "value": "casual",
+              "label": "Alles darf durch"
+            },
+            {
+              "value": "hard",
+              "label": "Keine Bosstrophäen"
+            },
+            {
+              "value": "veryhard",
+              "label": "Keine Portale"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "crossplay",
+          "label": "Crossplay (Xbox / Game Pass)",
+          "kind": "bool",
+          "default": "false",
+          "help": "Auch Spieler auf Xbox und aus dem Game Pass können beitreten.",
+          "group": "Zugang",
+          "format": "arg"
+        },
+        {
+          "key": "public",
+          "label": "In der Serverliste",
+          "kind": "bool",
+          "default": "true",
+          "help": "Der Server erscheint in der Community-Liste im Spiel.",
+          "group": "Zugang",
+          "format": "arg",
+          "trueValue": "1",
+          "falseValue": "0"
+        },
+        {
+          "key": "saveinterval",
+          "label": "Speichern alle",
+          "kind": "int",
+          "default": "1800",
+          "min": 60,
+          "max": 7200,
+          "help": "Sekunden.",
+          "group": "Sicherung",
+          "format": "arg"
+        },
+        {
+          "key": "backups",
+          "label": "Anzahl Sicherungen",
+          "kind": "int",
+          "default": "4",
+          "min": 1,
+          "max": 20,
+          "help": "So viele automatische Sicherungen der Welt behält Valheim.",
+          "group": "Sicherung",
+          "format": "arg"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -527,9 +1187,255 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": false,
-      "tunnel": null,
+      "tunnel": {
+        "proto": "both"
+      },
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "GameDifficulty",
+          "label": "Schwierigkeit",
+          "kind": "int",
+          "default": "1",
+          "min": 0,
+          "max": 5,
+          "help": "0 = Wanderer … 5 = Wahnsinn.",
+          "group": "Spielregeln",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "DayNightLength",
+          "label": "Tageslänge",
+          "kind": "int",
+          "default": "60",
+          "min": 10,
+          "max": 240,
+          "help": "Echte Minuten pro Spieltag.",
+          "group": "Spielregeln",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "BloodMoonFrequency",
+          "label": "Blutmond alle",
+          "kind": "int",
+          "default": "7",
+          "min": 0,
+          "max": 30,
+          "help": "Spieltage. 0 = nie.",
+          "group": "Spielregeln",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "BloodMoonEnemyCount",
+          "label": "Zombies pro Spieler im Blutmond",
+          "kind": "int",
+          "default": "8",
+          "min": 4,
+          "max": 64,
+          "help": "",
+          "group": "Spielregeln",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "DropOnDeath",
+          "label": "Beim Tod verlieren",
+          "kind": "enum",
+          "default": "1",
+          "options": [
+            {
+              "value": "0",
+              "label": "Nichts"
+            },
+            {
+              "value": "1",
+              "label": "Alles"
+            },
+            {
+              "value": "2",
+              "label": "Nur Werkzeuggürtel"
+            },
+            {
+              "value": "3",
+              "label": "Nur Rucksack"
+            },
+            {
+              "value": "4",
+              "label": "Alles löschen"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "PlayerKillingMode",
+          "label": "Spieler angreifen",
+          "kind": "enum",
+          "default": "3",
+          "options": [
+            {
+              "value": "0",
+              "label": "Niemand"
+            },
+            {
+              "value": "1",
+              "label": "Nur Verbündete"
+            },
+            {
+              "value": "2",
+              "label": "Nur Fremde"
+            },
+            {
+              "value": "3",
+              "label": "Alle"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "ZombieMove",
+          "label": "Zombies am Tag",
+          "kind": "enum",
+          "default": "0",
+          "options": [
+            {
+              "value": "0",
+              "label": "Gehen"
+            },
+            {
+              "value": "1",
+              "label": "Joggen"
+            },
+            {
+              "value": "2",
+              "label": "Rennen"
+            },
+            {
+              "value": "3",
+              "label": "Sprinten"
+            },
+            {
+              "value": "4",
+              "label": "Albtraum"
+            }
+          ],
+          "help": "",
+          "group": "Zombies",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "ZombieMoveNight",
+          "label": "Zombies in der Nacht",
+          "kind": "enum",
+          "default": "3",
+          "options": [
+            {
+              "value": "0",
+              "label": "Gehen"
+            },
+            {
+              "value": "1",
+              "label": "Joggen"
+            },
+            {
+              "value": "2",
+              "label": "Rennen"
+            },
+            {
+              "value": "3",
+              "label": "Sprinten"
+            },
+            {
+              "value": "4",
+              "label": "Albtraum"
+            }
+          ],
+          "help": "",
+          "group": "Zombies",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "LootAbundance",
+          "label": "Beute-Menge",
+          "kind": "int",
+          "default": "100",
+          "min": 25,
+          "max": 300,
+          "help": "Prozent.",
+          "group": "Beute",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "LootRespawnDays",
+          "label": "Beute erneuert sich nach",
+          "kind": "int",
+          "default": "7",
+          "min": 0,
+          "max": 60,
+          "help": "Spieltagen.",
+          "group": "Beute",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "XPMultiplier",
+          "label": "Erfahrung",
+          "kind": "int",
+          "default": "100",
+          "min": 25,
+          "max": 300,
+          "help": "Prozent.",
+          "group": "Beute",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "ServerVisibility",
+          "label": "Sichtbarkeit",
+          "kind": "enum",
+          "default": "2",
+          "options": [
+            {
+              "value": "0",
+              "label": "Nicht gelistet"
+            },
+            {
+              "value": "1",
+              "label": "Nur Freunde"
+            },
+            {
+              "value": "2",
+              "label": "Öffentlich"
+            }
+          ],
+          "help": "",
+          "group": "Zugang",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        },
+        {
+          "key": "EACEnabled",
+          "label": "Easy Anti-Cheat",
+          "kind": "bool",
+          "default": "true",
+          "help": "Aus erlaubt Mods, die EAC blockiert.",
+          "group": "Zugang",
+          "file": "serverconfig.xml",
+          "format": "xmlProperty"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -640,9 +1546,25 @@
           "+server.seed",
           "{seed|12345}",
           "+server.worldsize",
-          "3000",
+          "{set.worldsize}",
           "-logfile",
-          "-"
+          "-",
+          "+server.saveinterval",
+          "{set.saveinterval}",
+          {
+            "if": "set.pve",
+            "args": [
+              "+server.pve",
+              "true"
+            ]
+          },
+          {
+            "if": "set.description",
+            "args": [
+              "+server.description",
+              "{set.description}"
+            ]
+          }
         ],
         "env": {},
         "exe": "RustDedicated.exe"
@@ -660,9 +1582,54 @@
       "status": "stable",
       "stopCommand": null,
       "supportsBackup": true,
-      "tunnel": null,
+      "tunnel": {
+        "proto": "udp"
+      },
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "worldsize",
+          "label": "Kartengröße",
+          "kind": "int",
+          "default": "3000",
+          "min": 1000,
+          "max": 6000,
+          "help": "Gilt nur für eine neue Karte. Größer = mehr Platz, aber mehr Last.",
+          "group": "Welt",
+          "format": "arg",
+          "newWorldOnly": true
+        },
+        {
+          "key": "pve",
+          "label": "Nur PvE",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler können sich nicht gegenseitig Schaden zufügen.",
+          "group": "Spielregeln",
+          "format": "arg"
+        },
+        {
+          "key": "description",
+          "label": "Beschreibung",
+          "kind": "text",
+          "default": "",
+          "help": "Text in der Serverliste.",
+          "group": "Allgemein",
+          "format": "arg"
+        },
+        {
+          "key": "saveinterval",
+          "label": "Speichern alle",
+          "kind": "int",
+          "default": "600",
+          "min": 60,
+          "max": 3600,
+          "help": "Sekunden.",
+          "group": "Allgemein",
+          "format": "arg"
+        }
+      ]
     },
     {
       "backupPaths": [],
@@ -787,7 +1754,137 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": {
+        "appId": 108600,
+        "mode": "zomboid",
+        "hint": "Spieler laden die Mods beim Beitreten automatisch herunter."
+      },
+      "settings": [
+        {
+          "key": "PVP",
+          "label": "PvP",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "PauseEmpty",
+          "label": "Pausieren, wenn niemand online ist",
+          "kind": "bool",
+          "default": "true",
+          "help": "Die Zeit steht still, solange kein Spieler verbunden ist.",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "SleepAllowed",
+          "label": "Schlafen erlaubt",
+          "kind": "bool",
+          "default": "false",
+          "help": "",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "SleepNeeded",
+          "label": "Schlaf nötig",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler werden müde und müssen schlafen.",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "PlayerSafehouse",
+          "label": "Unterschlüpfe für Spieler",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler können Häuser als sicheren Unterschlupf beanspruchen.",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "NoFire",
+          "label": "Kein Feuer",
+          "kind": "bool",
+          "default": "false",
+          "help": "Feuer kann sich nicht ausbreiten.",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "AnnounceDeath",
+          "label": "Tode ankündigen",
+          "kind": "bool",
+          "default": "false",
+          "help": "Alle sehen, wenn ein Spieler stirbt.",
+          "group": "Spielregeln",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "GlobalChat",
+          "label": "Globaler Chat",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Allgemein",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "Open",
+          "label": "Offen für alle",
+          "kind": "bool",
+          "default": "true",
+          "help": "Aus = nur Spieler auf der Whitelist.",
+          "group": "Zugang",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "Public",
+          "label": "In der Serverliste",
+          "kind": "bool",
+          "default": "false",
+          "help": "Der Server erscheint in der öffentlichen Liste im Spiel.",
+          "group": "Zugang",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "PingLimit",
+          "label": "Ping-Grenze",
+          "kind": "int",
+          "default": "400",
+          "min": 0,
+          "max": 2000,
+          "help": "Spieler mit höherem Ping werden gekickt. 0 = aus.",
+          "group": "Zugang",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        },
+        {
+          "key": "SaveWorldEveryMinutes",
+          "label": "Speichern alle",
+          "kind": "int",
+          "default": "0",
+          "min": 0,
+          "max": 1440,
+          "help": "Minuten. 0 = nur beim Beenden.",
+          "group": "Leistung",
+          "file": "Zomboid/Server/spawnpoint.ini",
+          "format": "properties"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -861,7 +1958,37 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "gameSettingsPreset",
+          "label": "Schwierigkeit",
+          "kind": "enum",
+          "default": "Default",
+          "options": [
+            {
+              "value": "Default",
+              "label": "Normal"
+            },
+            {
+              "value": "Relaxed",
+              "label": "Entspannt"
+            },
+            {
+              "value": "Hard",
+              "label": "Schwer"
+            },
+            {
+              "value": "Survival",
+              "label": "Überleben"
+            }
+          ],
+          "help": "",
+          "group": "Spielregeln",
+          "file": "enshrouded_server.json",
+          "format": "json"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -912,7 +2039,99 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "settings": [
+        {
+          "key": "auto_pause",
+          "label": "Pausieren, wenn niemand online ist",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Allgemein",
+          "file": "server-settings.json",
+          "format": "json"
+        },
+        {
+          "key": "autosave_interval",
+          "label": "Automatisch speichern alle",
+          "kind": "int",
+          "default": "10",
+          "min": 1,
+          "max": 120,
+          "help": "Minuten.",
+          "group": "Allgemein",
+          "file": "server-settings.json",
+          "format": "json"
+        },
+        {
+          "key": "autosave_slots",
+          "label": "Anzahl Autosaves",
+          "kind": "int",
+          "default": "5",
+          "min": 1,
+          "max": 50,
+          "help": "So viele Spielstände werden reihum behalten.",
+          "group": "Allgemein",
+          "file": "server-settings.json",
+          "format": "json"
+        },
+        {
+          "key": "afk_autokick_interval",
+          "label": "AFK-Spieler kicken nach",
+          "kind": "int",
+          "default": "0",
+          "min": 0,
+          "max": 1440,
+          "help": "Minuten. 0 = nie.",
+          "group": "Zugang",
+          "file": "server-settings.json",
+          "format": "json"
+        },
+        {
+          "key": "allow_commands",
+          "label": "Konsolenbefehle",
+          "kind": "enum",
+          "default": "admins-only",
+          "options": [
+            {
+              "value": "admins-only",
+              "label": "Nur Admins"
+            },
+            {
+              "value": "true",
+              "label": "Alle"
+            },
+            {
+              "value": "false",
+              "label": "Niemand"
+            }
+          ],
+          "help": "Wer im Spiel Lua-Befehle nutzen darf (deaktiviert Errungenschaften).",
+          "group": "Zugang",
+          "file": "server-settings.json",
+          "format": "json"
+        },
+        {
+          "key": "only_admins_can_pause_the_game",
+          "label": "Nur Admins dürfen pausieren",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Zugang",
+          "file": "server-settings.json",
+          "format": "json"
+        },
+        {
+          "key": "non_blocking_saving",
+          "label": "Speichern im Hintergrund",
+          "kind": "bool",
+          "default": "false",
+          "help": "Kein Ruckler beim Speichern. Experimentell.",
+          "group": "Leistung",
+          "file": "server-settings.json",
+          "format": "json"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -1519,9 +2738,15 @@
       "joinPattern": null,
       "launch": {
         "args": [
-          "TheIsland?listen?SessionName={name}?Port={port}?QueryPort={port+2}?MaxPlayers={maxPlayers}{password:?ServerPassword=%}",
+          "TheIsland?listen?SessionName={name}?Port={port}?QueryPort={port+2}?MaxPlayers={maxPlayers}{password:?ServerPassword=%}{workshop:?GameModIds=%}",
           "-server",
-          "-log"
+          "-log",
+          {
+            "if": "workshop",
+            "args": [
+              "-automanagedmods"
+            ]
+          }
         ],
         "env": {},
         "exe": "ShooterGame/Binaries/Win64/ShooterGameServer.exe"
@@ -1541,7 +2766,131 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": {
+        "appId": 346110,
+        "mode": "native",
+        "steamcmdDir": "Engine/Binaries/ThirdParty/SteamCMD/Win64",
+        "hint": "Der Server lädt die Mods beim Start selbst. Spieler abonnieren sie im Workshop."
+      },
+      "settings": [
+        {
+          "key": "ServerPVE",
+          "label": "Nur PvE",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler können sich nicht gegenseitig angreifen.",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "DifficultyOffset",
+          "label": "Schwierigkeit",
+          "kind": "float",
+          "default": "0.2",
+          "min": 0,
+          "max": 1,
+          "help": "0 bis 1 – höher = stärkere wilde Dinos.",
+          "group": "Spielregeln",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "AllowThirdPersonPlayer",
+          "label": "Third-Person-Ansicht",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "ShowMapPlayerLocation",
+          "label": "Eigene Position auf der Karte",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "ServerCrosshair",
+          "label": "Fadenkreuz",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "XPMultiplier",
+          "label": "Erfahrung",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 20,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "TamingSpeedMultiplier",
+          "label": "Zähmen",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 20,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "HarvestAmountMultiplier",
+          "label": "Ernte-Menge",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 20,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "DayCycleSpeedScale",
+          "label": "Tag-Nacht-Tempo",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 10,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ShooterGame/Saved/Config/WindowsServer/GameUserSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        }
+      ]
     },
     {
       "backupPaths": [
@@ -1603,7 +2952,120 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": {
+        "appId": 440900,
+        "mode": "copy",
+        "ext": ".pak",
+        "target": "ConanSandbox/Mods",
+        "listFile": "ConanSandbox/Mods/modlist.txt",
+        "hint": "Spieler bekommen die Mods beim Beitreten angeboten oder abonnieren sie im Workshop."
+      },
+      "settings": [
+        {
+          "key": "PVPEnabled",
+          "label": "PvP",
+          "kind": "bool",
+          "default": "false",
+          "help": "",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "CanDamagePlayerOwnedStructures",
+          "label": "Gebäude zerstörbar",
+          "kind": "bool",
+          "default": "false",
+          "help": "Spieler können Bauten anderer Spieler beschädigen.",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "LogoutCharactersRemainInTheWorld",
+          "label": "Figuren bleiben nach dem Ausloggen",
+          "kind": "bool",
+          "default": "true",
+          "help": "",
+          "group": "Spielregeln",
+          "trueValue": "True",
+          "falseValue": "False",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "PlayerXPRateMultiplier",
+          "label": "Erfahrung",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 10,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "HarvestAmountMultiplier",
+          "label": "Ernte-Menge",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 10,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "ResourceRespawnSpeedMultiplier",
+          "label": "Rohstoffe wachsen nach",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 10,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "DayCycleSpeedScale",
+          "label": "Tag-Nacht-Tempo",
+          "kind": "float",
+          "default": "1.0",
+          "min": 0.1,
+          "max": 10,
+          "help": "Faktor, 1 = normal.",
+          "group": "Raten",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        },
+        {
+          "key": "ClanMaxSize",
+          "label": "Max. Clan-Größe",
+          "kind": "int",
+          "default": "30",
+          "min": 1,
+          "max": 200,
+          "help": "",
+          "group": "Allgemein",
+          "file": "ConanSandbox/Saved/Config/WindowsServer/ServerSettings.ini",
+          "format": "ini",
+          "section": "ServerSettings"
+        }
+      ]
     },
     {
       "backupPaths": [],
@@ -2822,6 +4284,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794916280517,
+  "updatedAt": 1794928381902,
   "version": 1
 }
