@@ -2588,6 +2588,7 @@
     "accountUrl": "",
     "apiUrl": "",
     "enabled": true,
+    "logo": "https://raw.githubusercontent.com/Basti032002/Spawnpoint/main/assets/anbieter-logo-81f61d781d.svg",
     "nitrado": {
       "allowToken": false,
       "clientId": "558818",
@@ -2659,7 +2660,9 @@
     "providerKind": "nitrado",
     "shopUrl": ""
   },
+  "pages": [],
   "schedule": [],
+  "sidebar": [],
   "startup": {
     "action": "none",
     "buttonLabel": "Minecraft Server Erstellen",
@@ -2770,6 +2773,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794913695863,
+  "updatedAt": 1794915679646,
   "version": 1
 }
