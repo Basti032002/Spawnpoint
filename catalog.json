@@ -329,6 +329,10 @@
           "file": "server.properties",
           "format": "properties"
         }
+      ],
+      "categories": [
+        "Survival",
+        "Aufbau"
       ]
     },
     {
@@ -494,6 +498,10 @@
           "file": "server.properties",
           "format": "properties"
         }
+      ],
+      "categories": [
+        "Survival",
+        "Aufbau"
       ]
     },
     {
@@ -613,6 +621,9 @@
           "file": "serverconfig.txt",
           "format": "properties"
         }
+      ],
+      "categories": [
+        "Survival"
       ]
     },
     {
@@ -993,6 +1004,9 @@
           "group": "Sicherung",
           "format": "arg"
         }
+      ],
+      "categories": [
+        "Aufbau"
       ]
     },
     {
@@ -1054,7 +1068,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [],
@@ -1110,7 +1127,10 @@
       "supportsBackup": false,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Sandbox"
+      ]
     },
     {
       "backupPaths": [],
@@ -1435,6 +1455,10 @@
           "file": "serverconfig.xml",
           "format": "xmlProperty"
         }
+      ],
+      "categories": [
+        "Aufbau",
+        "Shooter"
       ]
     },
     {
@@ -1495,7 +1519,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -1629,6 +1656,10 @@
           "group": "Allgemein",
           "format": "arg"
         }
+      ],
+      "categories": [
+        "Aufbau",
+        "Shooter"
       ]
     },
     {
@@ -1884,6 +1915,9 @@
           "file": "Zomboid/Server/spawnpoint.ini",
           "format": "properties"
         }
+      ],
+      "categories": [
+        "Sandbox"
       ]
     },
     {
@@ -1988,6 +2022,9 @@
           "file": "enshrouded_server.json",
           "format": "json"
         }
+      ],
+      "categories": [
+        "Aufbau"
       ]
     },
     {
@@ -2200,7 +2237,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [],
@@ -2271,7 +2311,10 @@
       "supportsBackup": false,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Sandbox"
+      ]
     },
     {
       "backupPaths": [],
@@ -2697,7 +2740,10 @@
       "supportsBackup": false,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Survival"
+      ]
     },
     {
       "backupPaths": [
@@ -2890,6 +2936,9 @@
           "format": "ini",
           "section": "ServerSettings"
         }
+      ],
+      "categories": [
+        "Aufbau"
       ]
     },
     {
@@ -3065,6 +3114,9 @@
           "format": "ini",
           "section": "ServerSettings"
         }
+      ],
+      "categories": [
+        "Aufbau"
       ]
     },
     {
@@ -3146,7 +3198,10 @@
       "supportsBackup": false,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3225,7 +3280,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3296,7 +3354,11 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Survival",
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3357,7 +3419,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3429,7 +3494,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3505,7 +3573,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3582,7 +3653,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Sandbox"
+      ]
     },
     {
       "backupPaths": [
@@ -3657,7 +3731,11 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Survival",
+        "Aufbau"
+      ]
     },
     {
       "backupPaths": [
@@ -3725,7 +3803,10 @@
       "supportsBackup": true,
       "tunnel": null,
       "variants": [],
-      "workshop": null
+      "workshop": null,
+      "categories": [
+        "Survival"
+      ]
     },
     {
       "backupPaths": [],
@@ -4284,6 +4365,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794928381902,
+  "updatedAt": 1794932452092,
   "version": 1
 }
