@@ -2746,19 +2746,6 @@
       "title": "Garry's Mod",
       "tone": "accent",
       "until": ""
-    },
-    {
-      "action": "none",
-      "buttonLabel": "",
-      "from": "",
-      "id": "9mdwdoqa",
-      "image": "",
-      "placement": "home",
-      "target": "",
-      "text": "test",
-      "title": "Test",
-      "tone": "accent",
-      "until": ""
     }
   ],
   "ui": {
@@ -2783,6 +2770,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794913628050,
+  "updatedAt": 1794913647066,
   "version": 1
 }
