@@ -2733,7 +2733,21 @@
     "sidebarStyle": "accent",
     "sidebarWidth": 252
   },
-  "tiles": [],
+  "tiles": [
+    {
+      "action": "create",
+      "buttonLabel": "Server Erstellen",
+      "from": "",
+      "id": "kd6srawm",
+      "image": "",
+      "placement": "home",
+      "target": "garrys-mod",
+      "text": "Garry's Mod is a physics sandbox. There aren't any predefined aims or goals. We give you the tools and leave you to play.",
+      "title": "Garry's Mod",
+      "tone": "accent",
+      "until": ""
+    }
+  ],
   "ui": {
     "defaultLanguage": "",
     "homeSubtitle": "",
@@ -2756,6 +2770,6 @@
     "welcomeTitle": "",
     "whatsNew": true
   },
-  "updatedAt": 1794913390900,
+  "updatedAt": 1794913593654,
   "version": 1
 }
